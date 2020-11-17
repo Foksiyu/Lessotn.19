@@ -42,7 +42,7 @@ Point.prototype.moveTo = function Point(x, y){
     this.y = y;
 }
 Point.prototype.toString = function(){
-    return `Точка с координатами  (x ${this.x}; y ${this.y})`;
+    return `Точка с координатами  (${this.x}; ${this.y})`;
 }
 let n = 4;
 let word = "Hello";
@@ -55,4 +55,20 @@ let A = new Point(12, 50);
 let B = new Point(6, 14);
 A.moveTo(10, 10);
 console.log(A.toString());
-console.log(B);
+console.log(B.toString());
+
+/*
+1)фруктовый сад
+Дано 1 дерево 
+яблоня каждый год дает 200 яблок
+tree = {
+    name: "Яблоня"
+    Ftuits: 200
+
+} 
+2)Создать класс с фруктом 
+Фрукт имеет диаметр щт 4см до 10см 
+фрукт имеет вес 4 см - 50 кг 10см - 120кг (посчитать в зависимости от диаметра )
+фрукт модет иметь диффект (20%) true
+наполнить яблоню массивом фруктов от зависимости от из параметра 
+*/
